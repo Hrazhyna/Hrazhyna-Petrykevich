@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">        
+  <title>maket-table</title>
+  <style>
+    div { text-align: center;}
+    table { 
+      display: inline-table; 
+      width: 60%; 
+      border-collapse: collapse;
+      font-family: sans-serif;
+      font-size: 20px;
+    }    
+    .header {
+      background-color: #a7d6e4; 
+      color: blue;
+      text-align: center;      
+      font-size: 25px;
+      height: 50px;
+    }
+    .footer {
+      background-color: #a7d6e4; 
+      color: blue;
+      text-align: center;              
+      font-size: 25px;
+      height: 80px;       
+    }
+    img {float: left; margin: 0 15px 10px 0;}
+    .article {text-align: center; font-weight: bold;}
+    .info {
+      width: 80%;      
+      background: url(img/ball.png) repeat-y right;
+      text-align: left;
+      vertical-align: top;        
+      padding: 15px;     
+    }
+    .menu {
+      width: 20%;
+      background-color: #f0e490;
+      text-align: left;
+      vertical-align: top;
+      padding: 15px; 
+    }
+    .menu p {font-weight: bold;}
+  </style>
+</head>
+<body>
+  <div>
+    <table>
+      <tr>
+        <td class="header" colspan="2">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</td>
+      </tr>
+      <tr>
+        <td class="menu">
+          <p>Виды спорта:</p>
+          <ul>
+            <li><a href="http://ru.sport-wiki.org/vidy-sporta/konkobezhnyy-sport/">конькобежный спорт</a></li>
+            <li><a href="http://ru.sport-wiki.org/vidy-sporta/biatlon/">биатлон</a></li>
+            <li><a href="http://ru.sport-wiki.org/vidy-sporta/futbol/">футбол</a></li>
+            <li><a href="http://ru.sport-wiki.org/vidy-sporta/strelba-iz-luka/">стрельба из лука</a></li>
+            <li><a href="https://world-sport.org/acyclic/jump_long/">прыжки в длину</a></li>
+            <li><a href="https://world-sport.org/acyclic/jump_high/rules/">прыжки в высоту</a></li>
+            <li><a href="http://ru.sport-wiki.org/vidy-sporta/figurnoe-katanie/">фигурное катание</a></li>
+            <li><a href="http://ru.sport-wiki.org/vidy-sporta/sinhronnoe-plavanie/">синхронное плавание</a></li>
+            <li><a href="http://ru.sport-wiki.org/vidy-sporta/shahmaty/">шахматы</a></li>
+            <li><a href="https://v-damki.com/rules-play.html">шашки</a></li>
+          </ul>
+        </td>
+        <td class="info">
+          <p class="article">ФУТБОЛ</p>
+          <p><img src="img/sport.jpg" alt="Награждение">Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук)
+            большее количество раз, чем команда соперника.
+          </p>
+          <p>
+            Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов.Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто формулировались в общих
+            чертах, которые позволяют упростить их применения в зависимости от характера игры.
+          </p>            
+        </td>
+      </tr>
+      <tr class="footer">
+        <td colspan="2">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
