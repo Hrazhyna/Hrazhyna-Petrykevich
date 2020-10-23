@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        
+        tr td {border-right: solid 3px #ff5100; padding: 10px;}        
+        tr td:last-child {border: none;}
+
+        ul {list-style-type: none;}
+        li {float: left; font-size: 40px; color: #ff5100;}        
+        li:last-child {border: none;}
+        
+        div {margin: 20px;}
+        div div {display: inline-block;}        
+        div div::after {content: url(sl.svg);}
+                
+        a {color: green;  font-size: 20px; font-style: italic; margin: 10px;}
+        a:hover {color: red;}
+    </style>
+</head>
+<body>
+    <!-- таблица - быстро, удобно, но она не совсем адаптивная;
+          разделители - рамка справа - самый простой способ и распространённый -->
+    <table>
+        <tr>
+            <td><a href="#">первая ссылка</a></td>
+            <td><a href="#">вторая ссылка</a></td>
+            <td><a href="#">третья ссылка</a></td>
+            <td><a href="#">четвёртая ссылка</a></td>
+            <td><a href="#">пятая ссылка</a></td>
+        </tr>
+    </table><br>
+    <!-- список - удобно, быстро, адаптивный;
+         разделители - набран с клавиатуры или можно мнемоник - быстро, может быть не совсем валидный способ-->
+    <ul>
+        <li><a href="#">первая ссылка</a>|</li>
+        <li><a href="#">вторая ссылка</a>|</li>
+        <li><a href="#">третья ссылка</a>|</li>
+        <li><a href="#">четвёртая ссылка</a>|</li>
+        <li><a href="#">пятая ссылка</a></li>
+    </ul><br><br>
+    <!-- div - просто, современно, можно было flex-ами сделать;
+         разделители - вставка изображения - неудобно, надо писать много кода, изображение утяжеляет страничку-->
+    <div>
+        <div><a href="#">первая ссылка</a></div>
+        <div><a href="#">вторая ссылка</a></div>
+        <div><a href="#">третья ссылка</a></div>
+        <div><a href="#">четвёртая ссылка</a></div>
+        <div><a href="#">пятая ссылка</a></div>
+    </div>
+
+</body>
+</html>
