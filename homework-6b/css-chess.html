@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css-chess</title>
     <style>
-        table.CHESS {            
-            border-collapse: collapse;
-        }
+        table.CHESS {border-collapse: collapse;}
         table.CHESS td {
             width: 50px;
             height: 50px;
             border: solid gray 1px;
         }        
-        tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
-            background-color: black;
-        }
+        tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {background-color: black;}
         
-        .CHESS td:last-child, .CHESS td:first-child, .CHESS tr:last-child, .CHESS tr:first-child  {
-            background-color: lightgreen;               
-        }
-        
-        
+        .CHESS tr:last-child td, .CHESS tr:first-child td {background-color: lightgreen; height: 20px;} 
+        .CHESS tr td:last-child, .CHESS tr td:first-child {background-color: lightgreen; width: 20px;}      
+               
     </style>
 </head>
 <body>
