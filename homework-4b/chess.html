@@ -19,6 +19,10 @@
         font-weight: bold;
       }
       p {margin: 0px;}
+      @media print {
+        * {color: black !important;} 
+        a[href^="#"] {display: none;}
+      }
     </style>    
   </head>
   <body>

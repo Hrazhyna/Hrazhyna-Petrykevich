@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star</title>
     <style>
-        a {
-            background: url(img/star0.png) no-repeat 50% 50%;
-            display: inline-block;
+        div.star div {
+            background: url(img/star0.png) no-repeat;
             width: 80px;
             height: 80px;
-        }
-        a:hover {
-            background: url(img/star1.png) no-repeat 50% 50%;                        
-        }
-        
+            display: inline-block;
+        } 
+        div.star:hover div {background: url(img/star1.png) no-repeat;} 
+        div.star div:hover ~ div {background: url(img/star0.png) no-repeat;}     
     </style>
 </head>
 <body>
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-    
+    <div class="star">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>    
 </body>
 </html>

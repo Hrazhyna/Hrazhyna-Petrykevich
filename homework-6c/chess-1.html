@@ -5,34 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chess-1</title>
     <style>
-        .NAME {
-            font-weight: bold;
-            font-size: 24px;
-            margin-top: 20px;
-        }
-        .BIRTHDAY {
-            color: green;
-        }
-        .CHAMPION {
-            font-weight: bold;
-            color: red;
-        }
-        .INFO {
-            font-style: italic;
-            color: blue;
-        }
-        #important {
-            border: solid red 1px;
-        }
-        a {
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a[href*="//"]::before {
-            content: url(img/extref.png);
-        }
-        p {
-            margin: 0px;
+        .NAME {font-weight: bold; font-size: 24px; margin-top: 20px;}
+
+        .BIRTHDAY {color: green;}
+
+        .CHAMPION {font-weight: bold; color: red;}
+
+        .INFO {font-style: italic; color: blue;}
+
+        #important {border: solid red 1px;}
+
+        a {text-decoration: none; font-weight: bold;}
+
+        a[href*="//"]::before {content: url(img/extref.png);}
+
+        p {margin: 0px;}
+        
+        @media print {
+            * {color: black !important;} 
+            a[href^="#"] {display: none;}
         }
     </style>
 </head>
