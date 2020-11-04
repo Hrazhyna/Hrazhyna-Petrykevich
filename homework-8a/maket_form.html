@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .forma {font-size: 24px; width: 100%; }
+        .name-form {margin-bottom: 20px;}
+        .name, .comment {float: left; width: 300px;}
+        div textarea {width: 100%; height: 100px;}
+        .text {margin-left: 300px;}
+        input[type^=text] {width: 100%;}        
+        input[type^=radio] {margin-left: 0; padding-left: 0;}        
+        input[type^=checkbox] {margin-left: 0; padding-left: 0;}
+        @media all and (max-width: 900px) {div.forma {font-size: 14px;} select {font-size: 8px;} div.name, div.comment {width: 170px;} div.text {margin-left: 170px;}}
+        @media all and (max-width: 600px) {div.name {float: none; width: 100%} div input[type^=text] {width: 100%;} span {display: block;} .forma div.text {margin-left: 0;} }
+    </style>
+</head>
+<body>
+    <div class="forma">
+        <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">            
+            <div class="name-form">Для публикации вашей статьи, заполните пожалуйста следующую форму:</div>
+
+            <!------- Название ------->            
+            <div class="name">Название статьи:</div>
+            <div class="text"><input type="text" name="name-article"></div>
+            
+            <!------- Рубрика ------->
+            <div class="name">Рубрика:</div>
+            <div>                
+                <select name="rubric">
+                    <option value="1">компьютерная техника</option>
+                    <option value="2">графика и дизайн</option>
+                    <option value="3" selected>программирование</option>
+                </select>                 
+            </div>
+            <!------- Публикация ------->
+            <div class="name">Публикация:</div>
+            <div>                
+                <span><input type="radio" name="public" value="1">на сайте</span>
+                <span><input type="radio" name="public" value="2">в журнале</span>                
+                <span><input type="radio" name="public" value="3">на сайте и в журнале</span>
+            </div>
+            <!------- Сheckbox ------->
+            <div class="comment">Разрешить комментарии:</div>
+            <div><input type="checkbox" name="comment" checked></div>
+            <!------- Комментарии ------->
+            <div>Текст статьи:</div>
+            <div><textarea name="text"></textarea></div>
+            <!------- Submit ------->
+            <div class="name"><input type="submit" value="Опубликовать"></div>
+            
+        </form>        
+    </div>
+</body>
+</html>
