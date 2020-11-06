@@ -73,8 +73,8 @@ img {
   div.header,
   div.footer {
     font-size: 16px;
-    height: 25px;
-    padding-top: 10px;
+    height: auto;
+    padding-bottom: 10px;
   }
   div.menu {
     display: none;
@@ -91,6 +91,7 @@ img {
     float: none;
     display: block;
     margin: auto;
+    width: 100%;
   }
   .text {
     margin-top: 20px;
