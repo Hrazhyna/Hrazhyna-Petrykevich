@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+    <style type="text/css">
+        .sh_a {fill: #ff0202; stroke: #b50101; stroke-width: 5; stroke-linecap: round;}
+        .sh_a_1 {fill: #ff0202; stroke: #b50101; stroke-width: 8; stroke-linejoin: round;}
+        .sh_a_2 {fill: #f93131;}
+        .sh_a_3 {fill: #f45050;}
+        .sh_a_4 {fill:#a35104; stroke: #a03d13; stroke-width: 5; stroke-linejoin: round;}
+
+        .leaf {fill: #5fbf00; stroke: #3f7f00; stroke-width: 5; stroke-linejoin: round;}
+        .line line {fill: none; stroke: #3f7f00; stroke-width: 2; stroke-opacity: 1; stroke-linecap: round;}
+        
+        .bite {display: none;}
+        .b {fill: #f9f9b3; stroke: #b50101; stroke-width: 5;}
+        .b_s {fill: #f2f2a4;}
+
+        .apple:hover .bite {display: block;}    
+        .apple:hover {transform: scale(0.8); transform-origin: 50% 50%;}    
+        .apple:hover g.leaf {rotate: -40deg; transform-origin: 45% 35%;}
+        .apple:hover .leaf path {fill: #bf9c00;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Наведи курсор на яблоко:</h1>
+        <svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+            <g class="apple">
+        
+                <g class="shadow">
+                    <path class="sh_a" d="m232,127c22,-2 34,-5 52,-5c51,-7 101,28 109,69c8,23 3,83 -2,112c-9,75 -55,207 -147,195c-37,-10 -33,-8 -73,-3c-89,17 -143,-106 -159,-185c-7,-33 -14,-98 -1,-131c10,-30 61,-50 95,-47c45,-2 46,11 126,-4-0,0z" />
+                    <path class="sh_a_1" d="m114,172c6,-2 52,12 62,14c18,8 86,5 87,6c-20,0 -61,9 -84,3c-24,-7 -38,-16 -65,-23l-0,-0z" />
+                    <path class="sh_a_2" d="m165,198c37,8 86,1 93,0c30,2 38,-33 60,-30c42,16 32,85 20,124c-20,54 -48,92 -84,136c-36,45 -50,55 -100,60c-50,5 -69,-33 -93,-107c-24,-74 -24,-111 -6,-144c18,-33 14,-27 31,-37c17,-10 56,-1 78,-2l-0,0z" />
+                    <path class="sh_a_3" d="m365,165c8,3 -12,-46 -92,-35c-80,12 -126,11 -155,5c-35,-5 -57,6 -76,15c-11,7 -16,11 -22,19c-15,23 -14,58 -11,86c3,21 4,39 8,56c14,65 24,76 40,105c15,25 8,20 37,47c29,27 93,29 53,22c-40,-7 -97,-132 -82,-207c15,-76 10,-49 75,-40c65,9 81,-11 72,-19c-8,-8 -13,-12 -46,-22c-33,-10 -38,-18 -69,-23c-1,-4 10,-8 14,-10c38,-16 69,-12 114,-16c17,-4 54,-6 70,-7c39,-5 59,22 68,25l1,0z" />
+                    <path class="sh_a_4" d="m186,182c7,-57 16,-111 40,-171c15,6 31,3 46,2c-62,26 -68,121 -79,177l-6,-9l0,0z" />
+                </g>
+                <g class="leaf">
+                    <path d="m192,181c-37,-19 -81,-15 -111,-30c-41,-15 -41,-103 -74,-134c40,27 85,4 128,34c40,24 37,92 56,121l0,9-0,0z" />
+                    <g class="line">
+                        <line x1="188" y1="174" x2="32" y2="36"/>
+                        <line x1="72" y1="47" x2="80" y2="76"/>
+                        <line x1="105" y1="59" x2="116" y2="109"/>
+                        <line x1="142" y1="86" x2="155" y2="144"/>
+                        <line x1="100" y1="143" x2="156" y2="146"/>
+                        <line x1="74" y1="120" x2="118" y2="111"/>
+                        <line x1="44" y1="83" x2="80" y2="79"/>
+                    </g>
+                </g>
+        
+                <g class="bite">
+                    <path class="b" d="m397,230c-1,-19 -3,-41 -22,-34c-24,26 -13,24 -41,13c-18,-12 -83,-5 -85,54c-2,59 -25,55 -20,80c5,25 38,54 53,61c15,7 46,-8 71,-7c25,1 45,-118 44,-167l-0,-0z" />
+                    <path class="b_s" d="m314,219c-3,-2 16,-6 47,7c41,-30 20,66 15,107c-3,-40 5,-115 -28,-79c-44,8 -10,-20 -25,-21l-9,-14z" />
+                    <path class="b_s" d="m259,266c-3,11 11,29 8,40c-7,11 -27,5 -21,32c6,15 30,-1 35,18c9,9 33,19 39,8c-27,-10 -32,-26 -13,-35c19,-9 -41,4 -28,-11c13,-15 -16,-84 -20,-53z" />
+                    <path class="b_s" d="m314,295c-24,-21 17,13 36,3c20,-10 -14,-7 0,30c15,37 7,65 1,45c-6,-20 -14,-56 -37,-77l-0,0z" />
+                </g>
+            </g>
+        
+        </svg>
+    </div>
+</body>
+</html>
