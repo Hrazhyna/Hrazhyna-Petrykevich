@@ -16,21 +16,19 @@
         var ageDay = age * 365;
         var ageYear = age + 5;
         var gender = confirm('Ваш пол - мужской?');
-            if (gender == true) {gender = 'ваш пол: мужской';}
-            else {gender = 'ваш пол: женский';}
+        var gs;
+            if (gender) {gs = 'ваш пол: мужской'}
+            else {gs = 'ваш пол: женский'};
+        var pl;
+            if (gender) {pl = 62}
+            else {pl = 57};
+        var ps;
+            if (age >= pl) {ps = 'да'}
+            else {ps = 'нет'};
                  
-            if (gender == true && age >= 62) {pension = 'да';
-            } else {
-                pension = 'нет';
-            }
-            if (gender != true && age >= 57) {
-                pension = 'да';
-            } else  {
-                pension = 'нет';
-            }  
-                
+                            
         alert ('ваше ФИО: ' + lastName + ' ' + name + ' ' + middleName  + '\n' + 'ваш возраст в годах: ' + age + 
-        '\n' + 'ваш возраст в днях: ' + ageDay + '\n' + 'через 5 лет вам будет: ' + ageYear + '\n' + gender + '\n' + 'вы на пенсии: ' + pension)
+        '\n' + 'ваш возраст в днях: ' + ageDay + '\n' + 'через 5 лет вам будет: ' + ageYear + '\n' + gs + '\n' + 'вы на пенсии: ' + ps)
     </script>
     
 </body>
