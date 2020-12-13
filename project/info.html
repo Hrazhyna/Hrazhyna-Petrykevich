@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+   <div class="wrapper">
+        <header class="header">
+            <div class="header_body">
+                <a href="index.html" class="header_logo" title="главная страница"><span class="logo_1">The</span><span class="logo_2">Film</span></a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="index.html" class="header_link" title="главная страница">Главная</a></li>
+                        <li><a href="story.html" class="header_link" title="узнать о фильме больше">О фильме</a></li>
+                        <li><a href="starring.html" class="header_link" title="узнать об актёрах">Актёры</a></li>
+                        <li><a href="gallery.html" class="header_link" title="перейти в галерею">Галерея</a></li>
+                        <li><a href="info.html" class="header_link" title="вкладка о сайте">О сайте</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="title-container">
+            <div class="description">О сайте</div>
+        </div>
+        <div class="starring">
+            <div class="form-title"><h2 class="name">Если вы нашли интересный материал для моего сайта, заполните следующую форму и нажмите кнопку &laquo;отправить&raquo;.</h2></div>
+            <div class="form-container">
+                <fieldset>
+                    <legend>Заполните форму для отправки</legend>
+                    <form action="index.html" method="get">
+                        <label for="name">Введите ваше имя:</label><br>
+                        <input id="name" type="text" pattern=".{3,}" placeholder="Имя"><br>
+                        <label for="email">Введите ваш e-mail:</label><br>
+                        <input type="email" id="email" placeholder="Почта"><br>
+                        <label for="textar">Введите свой текст:</label><br>
+                        <textarea id="textar" cols="30" rows="10" placeholder="Сообщение"></textarea><br>
+                        <button type="reset">Стереть</button>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_body">
+                <div>&copy; 2020 TheFilm. Все права защищены</div>
+                <div>Разработка сайта: Hrazhyna Petrykevich</div>
+            </div>
+        </footer>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+    <script src="JS/script.js"></script> 
+</body>
+</html>
