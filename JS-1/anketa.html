@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa</title>
+</head>
+<body>
+    <p>Анкета</p>
+    <script>
+        var lastName = prompt('Введите вашу фамилию:');                          
+        while (!lastName) {
+            // RegExp^[а-яА-ЯёЁ]+$
+            lastName = prompt('Введите вашу фамилию корректно:'); 
+        }            
+        var name = prompt('Введите ваше имя:');
+        while (!name) {
+            name = prompt('Введите ваше имя корректно:');
+        }
+        var middleName = prompt('Введите ваше отчество:');
+        while (!middleName) {
+            middleName = prompt('Введите ваше отчество корректно:');
+        } 
+        do {
+            var ageStr = prompt('Введите ваш возраст:');
+            var age = parseInt(ageStr);
+        }
+        while (isNaN(age)); 
+        var ageDay = age * 365;
+        var ageYear = age + 5;
+        var gender = confirm('Ваш пол - мужской?');
+        var gs;
+            if (gender) {gs = 'ваш пол: мужской'}
+            else {gs = 'ваш пол: женский'};
+        var pl;
+            if (gender) {pl = 62}
+            else {pl = 57};
+        var ps;
+            if (age >= pl) {ps = 'да'}
+            else {ps = 'нет'};
+                 
+                            
+        alert ('ваше ФИО: ' + lastName + ' ' + name + ' ' + middleName  + '\n' + 'ваш возраст в годах: ' + age + 
+        '\n' + 'ваш возраст в днях: ' + ageDay + '\n' + 'через 5 лет вам будет: ' + ageYear + '\n' + gs + '\n' + 'вы на пенсии: ' + ps)
+    </script>
+    
+</body>
+</html>

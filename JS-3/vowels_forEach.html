@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+        var str = prompt('Введите фразу на русском языке?');
+            function countVowels(s) {
+                s = str.toLowerCase().split('');            
+                let count = 0;
+                let v = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
+                // [...str] или Array.from(str)
+                s.forEach(letter => {
+                    if (v.includes(letter))
+                    count++;
+                });
+            return count;
+        }
+        console.log(countVowels(str));
+    </script>
+</body>
+</html>
