@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#canvas {
+  z-index: -1;
+}
+.nik {
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+  transform: translate(0, 100%);
+  background-color: #6e6666;
+  margin-left: 35%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ok {
+  border-radius: 10px;
+  padding: 5px;
+}
+.record {
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  overflow: auto;
+  z-index: 2;
+  background-color: #6e6666;
+  margin-left: 40%;
+  transition: all 0.8s ease 0s;
+  transform: translate(0, 50%);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.close {
+  height: 30px;
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
